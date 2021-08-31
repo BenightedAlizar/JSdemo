@@ -1,13 +1,34 @@
-jepjep
+<head><title>Klikkailu</title></head>
 
-<button type="button" onclick="klikkaus">Yolooo</button>
-<hi>jepjep</hi>
+<body>
+    Joo
+    <hi>jepjep</hi>
+
+<button type="button" onclick="Klikkaus()">Klikkaa tätä</button>
+
+
+<img src="egg.jpg" alt="" id="munakuva" width="500">
+<p>Preteksti<p id="numero"> 0 </p>afterteksti</p>
+
+
 <script>
-    let klikkaukset = 0;
+    let klikkaukset = 0
+
     function Klikkaus(){
-        klikkaukset++;
-        if(klikkaus >50){
-            alert("LOPETA")
+        klikkaukset++
+            document.getElementById("numero").innerHTML = klikkaukset
+
+        if(klikkaukset > 3){
+            document.getElementById("munakuva").src = "brokenegg.png"
+            alert("Ei enää")
         }
     }
+
+
+    
 </script>
+
+
+
+
+</body>
